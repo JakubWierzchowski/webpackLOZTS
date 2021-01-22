@@ -1,0 +1,90 @@
+@import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,500&display=swap');
+
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: 'Lora', serif;
+    background-color: #11130f;
+    margin: 10px 40px 10px 40px;
+  }
+  .header {
+    
+    max-height: 43vh;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  .main {
+    background-color: #ffffff;
+    margin-top: -85px;
+  }
+
+
+  h1 {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+   
+}
+
+.article__news {
+    padding: 20px;
+    margin-top: 3px !important;
+    
+}
+    .news__tittle--h2 {
+        padding-top: 6px;
+          font-size: 30px;
+          font-weight: 700;
+          text-align: center;
+      }
+      .news{
+        background-color: #f0efef;
+        margin: 0 auto;
+        width: 90%;
+      }
+      
+      .news__date {
+        color: #666;
+        font-size: 20px;
+        line-height: 17px;
+        text-align: end;
+        padding: 0px 17px 8px 4px;
+      }
+      .news__text {
+        padding: 30px;
+        text-align: justify;
+        font-size: 25px;
+      }
+      .news__signature {
+        font-size: 20px;
+        font-weight: 540;
+        text-align: end;
+        padding: 0 16px 8px 0;
+      }
+
+      .information__link {
+        display: inline-block;
+        font-size: 1.5vw;
+        text-decoration: none;
+        color: rgb(223, 3, 3);
+        padding-top: 5px;
+      
+       
+        &:hover {
+          background-color: rgb(51, 161, 0);
+          cursor: pointer;
+
+      } }
+  

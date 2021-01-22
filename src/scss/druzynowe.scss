@@ -1,0 +1,109 @@
+@import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,500&display=swap');
+
+
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Lora', serif;
+  background-color: #11130f;
+  margin: 10px 40px 10px 40px;
+}
+.header {
+  
+  max-height: 43vh;
+}
+
+.clear {
+  clear: both;
+}
+.main {
+  background-color: #fff;
+  margin-top: -85px;
+}
+
+.flex {
+  display: flex;
+  position: fixed;
+}
+.fixed {
+  position: relative;
+  top: 20px;
+  left: 1340px;
+  border: 5px ;
+  color: rgb(0, 0, 0); 
+  background-color:#ddd;
+  padding: 8px;
+  
+}
+.fixed__div {
+  padding: 10px;
+  
+}
+.a__link {
+  display: inline-block;
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: #fff;
+ 
+  &:hover {
+    text-align: center;
+    background-color: rgb(17, 128, 0);
+    cursor: pointer;
+  }
+}
+
+
+
+  
+    h1 {
+      margin: 0 auto !important;
+    text-align: center;
+      padding: 25px 5px 1px 0;
+      left: 770px;
+      background-color: #fff;
+}
+h2 {
+  margin-top: 80px;
+  text-align: center;
+  color: #bb0303;
+}
+h3 {
+  margin-top: 80px;
+  text-align: center;
+  color: #000000;
+}
+
+
+
+.table{
+  margin: 0 auto;
+  margin-left: 150px;
+    width: 70%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 40px !important; 
+}
+
+.table, td, th  {
+    font-size: 20px;
+    border-top: 1px solid #ddd;
+    padding: 5px 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+ 
+
+.table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+  
+

@@ -1,0 +1,195 @@
+@import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,500&display=swap');
+
+.navigation {
+    height: 400px;
+    display: grid;
+    grid-template-areas: "header header";
+    &__logo {
+      width: 25vw;
+      grid-area: header;
+      background-color: rgb(255, 255, 255);
+      border-radius: 50%;
+      z-index: 5;
+    }
+    &__net {
+      background-color: rgba(249, 249, 249, 0);
+      margin-left: 0px;
+      grid-area: header;
+     &--background {
+       background-color: #000000;
+       height: 13vh;
+       
+      }
+      &--top {
+        margin-left: 2vw;
+        background-color: #059316;
+        height: 1.8vh;
+        font-size: 2vh;
+        border-radius: 6px 6px 0 0;
+      }
+      &--middle {
+        margin-left: 2vw !important;
+        height: 12.5vh;
+        font-size: 30px;
+        margin: 0;
+        background: radial-gradient(black 0px, transparent 0.1px),
+          radial-gradient(rgb(0, 0, 0) -10px, transparent 0.1px),
+          linear-gradient(rgb(249, 249, 249) 1px, transparent 0),
+          linear-gradient(
+            90deg,
+            transparent 1px,
+            transparent 1px,
+            #2d8d013a 1px,
+            #2d8d013a 20px,
+            transparent 800px,
+            transparent 109px
+          ),
+          linear-gradient(
+            -45deg,
+            transparent 2px,
+            transparent 2px,
+            #2d8d013a 0px,
+            #2d8d013a 78px,
+            transparent 800px,
+            transparent 109px
+          ),
+          #fff;
+        background-size: 1000px 2000px, 1000px 1000px, 100% 6px, 10px 1px, 109px 19px;
+        background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+        &--title {
+          font-size: 2.5vw;
+          margin: 0;
+          padding: 15px 15px 0 420px;
+        }
+      }
+      &--bottom1 {
+        margin-left: 2vw !important;
+        background-color: #fafafa;
+        height: 1.1vh;
+        margin: 0 auto;
+
+      }
+      &--bottom {
+        background-color: #059316;
+        height: 5.5vh;
+        margin: 0 auto;
+        margin-left: 400px;
+      }
+    }
+    &__link {
+      display: inline-block;
+      font-size: 1.5vw;
+      text-decoration: none;
+      color: #fff;
+     
+      &:hover {
+        text-align: center;
+        background-color: rgb(4, 4, 4);
+        cursor: pointer;
+      }
+    }
+  }
+ 
+  
+  .ol {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    margin: 0;
+    list-style: none;
+  }
+  
+  ol a {
+    padding: 5px;
+    text-align: center;
+  }
+  
+  ol > li {
+    
+    margin: 0;
+    padding: 0;
+    float: left; 
+    position: relative;
+  
+  }
+  ol > li > a {
+    width: 240px;
+    text-decoration: none;
+    
+}
+
+ 
+  
+  ol > li  ul {
+    
+    display: none;
+    position: absolute;
+    font-size: 6vw;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+  
+  }
+  ol > li:hover > ul {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+  }
+  ol > li ul ul {
+    left: 240.3px; 
+    top: -3px;
+    
+   
+}
+  
+  ol > li > ul  li {
+    background-color: #bd0707;
+    position: relative;
+    width: 240px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 100;
+    padding: 5px 0;
+  }
+
+  ol > li ul li a {
+    display: block;
+    width: 100%;
+    
+}
+
+
+  ol > li > ul > li:hover {
+    
+    cursor: pointer;
+  }
+ 
+  ol > li > ul > li:hover > ul {
+    background-color: #080908;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    
+    
+}
+
+ol > li ul li a:hover,
+ol > li ul li:hover > a {
+  background-color: #080908;
+     text-decoration: none;
+     display: inline-block;
+     padding: 5px 0px;
+   
+   
+}
+ 
+  
+  
+
+
+
+
+
+  
+

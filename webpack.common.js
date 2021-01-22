@@ -4,8 +4,13 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 module.exports = {
   /* here you can define another js file */
   entry: {
-    index: "./src/js/index.js",
-    another: "./src/js/another.js",
+    navigation: "./src/js/navigation.js",
+    lozts: "./src/js/lozts.js",
+    information: "./src/js/information.js",
+    zarzad: "./src/js/zarzad.js",
+    druzynowe: "./src/js/druzynowe.js",
+    
+    
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -77,16 +82,65 @@ module.exports = {
 
     /* here you can define another html file and its dependencies */
     new HtmlWebpackPlugin({
-      template: "./src/pages/index.html",
+      template: "./src/pages/navigation.html",
       inject: true,
-      chunks: ["index"],
-      filename: "index.html",
+      chunks: ["navigation"],
+      filename: "navigation.html",
     }),
     new HtmlWebpackPlugin({
-      template: "./src/pages/another.html",
+      template: "./src/pages/information.html",
       inject: true,
-      chunks: ["index", "another"],
-      filename: "another.html",
+      chunks: ["information", "navigation"],
+      filename: "information.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/lozts.html",
+      inject: true,
+      chunks: ["lozts", "navigation"],
+      filename: "lozts.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/naszesukcesy.html",
+      inject: true,
+      chunks: ["lozts", "navigation"],
+      filename: "naszesukcesy.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/zarzad.html",
+      inject: true,
+      chunks: ["zarzad", "navigation"],
+      filename: "zarzad.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/2ligaM.html",
+      inject: true,
+      chunks: ["druzynowe", "navigation"],
+      filename: "2ligaM.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/2ligaK.html",
+      inject: true,
+      chunks: ["druzynowe", "navigation"],
+      filename: "2ligaK.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/3ligaM.html",
+      inject: true,
+      chunks: ["druzynowe", "navigation"],
+      filename: "3ligaM.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/4ligaM.html",
+      inject: true,
+      chunks: ["druzynowe", "navigation"],
+      filename: "4ligaM.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/3ligaK.html",
+      inject: true,
+      chunks: ["druzynowe", "navigation"],
+      filename: "3ligaK.html",
+    }),
+
   ],
 };

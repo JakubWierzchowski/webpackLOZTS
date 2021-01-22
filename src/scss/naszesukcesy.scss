@@ -1,0 +1,60 @@
+@import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,500&display=swap');
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: 'Lora', serif;
+    background-color: #000000;
+    margin: 10px 40px 10px 40px;
+  }
+  .header {
+    
+    max-height: 43vh;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  .main {
+     margin-top: -85px;
+    background-color: #ffffff;
+    
+  }
+
+
+h1 {
+    z-index: 1000;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    color: #000000;
+}
+
+.sukcessDate {
+    font-size: 30px;
+    text-align: center;
+    color: #037e03;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.name {
+    font-size: 20px;
+    padding: 5px;
+    line-height: 21px;
+    list-style: none;
+}
+
+.name::before {
+    content: "🏓";
+    padding: 8px;
+}

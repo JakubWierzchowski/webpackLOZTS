@@ -1,13 +1,294 @@
+@import "modules/eventBox.scss";
 @import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,500&display=swap');
 
-@import "_variables";
-@import "modules/hello.scss";
 
-body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+
+html {
+  box-sizing: border-box;
 }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Lora', serif;
+  background-color: #11130f;
+  margin: 10px 40px 10px 40px;
+}
+.header {
+  
+  max-height: 43vh;
+}
+
+.clear {
+  clear: both;
+}
+.main {
+  background-color: #fff;
+  margin-top: -85px;
+}
+
+
+  .information__link {
+    text-decoration: none;
+    color: #11130f;
+    &:hover {
+      overflow: hidden;
+      cursor: pointer;
+
+  }
+}
+.article__news {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 50px !important;
+  
+}
+  
+ h1 {
+   margin: 0 auto !important;
+ text-align: center;
+   padding: 25px 5px 1px 0;
+   left: 770px;
+   background-color: #fff;
+   
+  
+  
+}
+.news__tittle--h2 {
+  padding-top: 6px;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+.news{
+  width: 30vw;
+  background-color: #f0efef;
+  height: 178px;
+  overflow: hidden;
+}
+
+.news:hover {
+  overflow: visible;
+  height: auto;
+ 
+ 
+
+}
+
+.news__date {
+  color: #666;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: end;
+  padding: 0px 17px 8px 4px;
+}
+.news__text {
+  padding: 15px;
+  text-align: justify;
+}
+.news__signature {
+  font-size: 20px;
+  font-weight: 540;
+  text-align: end;
+  padding: 0 16px 8px 0;
+}
+
+h4 {
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: -10px;
+  margin-bottom: 22px;
+  line-height: 37px;
+  padding: 0;
+  position: relative;
+  text-align: left;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 66% 33%;
+  column-gap: 16px;
+  margin-top: 10px;
+}
+
+
+.tittleGrid {
+  margin: 20px 0 5px 20px;
+  padding: 5px;
+  font-size: 40px;
+}
+h2 {
+  font-size: 40px;
+  margin: 0;
+  
+}
+
+.grid__news--one {
+  margin: 0 auto;
+  width: 300px;
+  height: 200px;
+
+}
+.bigNews {
+  display: table;
+  margin-left:  24px;
+  margin-right: 24px; 
+  
+
+}
+
+.leftGrid {
+  padding-bottom: 24px;
+  width: 50%;
+  min-height: 1px;
+  float: left;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.leftLeft {
+  position: relative;
+  padding-bottom: 21px;
+}
+.positionrelative {
+  position: relative;
+  margin: 0;
+}
+.positionrelative2 {
+  position: relative;
+  margin: 0;
+    
+}
+
+
+.photoGrid {
+  position: relative;
+    margin-bottom: 13px;
+}
+
+.photoGrid1 {
+  position: relative;
+}
+
+
+.underPhoto {
+  font-size: 21px;
+  font-weight: 700;
+    line-height: 25px;
+    margin: 0 0 6px;
+    display: block;
+}
+
+h3 {
+  margin-top: 6px;
+}
+
+
+.dateL {
+  font-size: 11px;
+    margin-bottom: 7px;
+    line-height: 1;
+    min-height: 17px;
+}
+
+.span {
+  color: #666;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.textGrid {
+  color: #222;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 9px;
+}
+
+
+
+.td-block-row {
+  
+    margin-right: -24px;
+    
+}
+.td-block-row:before {
+  display: table;
+  content: '';
+
+}
+.td-block-row:after {
+clear: both;
+display: table;
+    content: '';
+}
+
+.td-block-span6 {
+  float: left;
+    padding-left: 50px;
+    width: 50%;
+}
+.td-block-span6:last-child {
+  padding-left: 0px;
+}
+
+
+.td-block-span6-mod {
+  padding-bottom: 1px;
+  position: relative;
+  line-height: 21px;
+}
+
+.td-module-thumb {
+  position: absolute;
+    left: 0;
+    top: 0;
+    
+  
+  
+}
+.smallLogo__image {
+  width: 100px;
+}
+
+
+.smalltext {
+  margin-left: 116px;
+  min-height: 70px;
+}
+
+.smallh3 {
+  font-size: 14px;
+    margin-bottom: 0!important;
+    margin: 0 0 6px;
+  
+}
+
+    .smalldata {
+      margin-bottom: 0;
+      margin-left: 118px;
+      font: 11px;
+      
+
+    }
+
+    .span2 {
+      color: #666;
+    font-size: 12px;
+    line-height: 17px;
+    display: inline-block;
+    position: relative;
+    top: -40px;
+    }
+
+    .time {
+      color: #666;
+      font-size: 12px;
+      line-height: 17px;
+    }
+
+    .linkBottom {
+      color: #7b7272;
+    }
