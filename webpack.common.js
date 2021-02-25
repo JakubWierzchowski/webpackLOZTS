@@ -9,7 +9,7 @@ module.exports = {
     information: "./src/js/information.js",
     zarzad: "./src/js/zarzad.js",
     druzynowe: "./src/js/druzynowe.js",
-    
+    sukcesy: "./src/js/naszesukcesy.js",
     
   },
   output: {
@@ -102,7 +102,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/naszesukcesy.html",
       inject: true,
-      chunks: ["lozts", "navigation"],
+      chunks: ["sukcesy", "navigation"],
       filename: "naszesukcesy.html",
     }),
     new HtmlWebpackPlugin({
@@ -141,6 +141,7 @@ module.exports = {
       chunks: ["druzynowe", "navigation"],
       filename: "3ligaK.html",
     }),
+    
 
   ],
 };

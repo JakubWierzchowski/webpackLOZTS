@@ -1,66 +1,73 @@
 @import "~normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,500&display=swap');
 
+.banery {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 400px;
+}
+.baner--item {
+  padding: 10px;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.banner--item__2 {
+  background-color: rgba(255, 255, 255, 0.86);
+}
+
 .navigation {
     height: 400px;
     display: grid;
     grid-template-areas: "header header";
     &__logo {
-      width: 25vw;
+      width: 430px;
       grid-area: header;
       background-color: rgb(255, 255, 255);
       border-radius: 50%;
       z-index: 5;
     }
     &__net {
-      background-color: rgba(249, 249, 249, 0);
-      margin-left: 0px;
+      background-color: rgb(255, 255, 255);
+      margin-left: 25px;
       grid-area: header;
      &--background {
        background-color: #000000;
-       height: 13vh;
+       height: 119px;
        
       }
       &--top {
         margin-left: 2vw;
         background-color: #059316;
-        height: 1.8vh;
+        height: 1.7vh;
         font-size: 2vh;
-        border-radius: 6px 6px 0 0;
+       
       }
       &--middle {
         margin-left: 2vw !important;
-        height: 12.5vh;
+        height: 123px;
         font-size: 30px;
         margin: 0;
-        background: radial-gradient(black 0px, transparent 0.1px),
-          radial-gradient(rgb(0, 0, 0) -10px, transparent 0.1px),
-          linear-gradient(rgb(249, 249, 249) 1px, transparent 0),
-          linear-gradient(
-            90deg,
-            transparent 1px,
-            transparent 1px,
-            #2d8d013a 1px,
-            #2d8d013a 20px,
-            transparent 800px,
-            transparent 109px
-          ),
-          linear-gradient(
-            -45deg,
-            transparent 2px,
-            transparent 2px,
-            #2d8d013a 0px,
-            #2d8d013a 78px,
-            transparent 800px,
-            transparent 109px
-          ),
-          #fff;
-        background-size: 1000px 2000px, 1000px 1000px, 100% 6px, 10px 1px, 109px 19px;
-        background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+       &--background {
+         position: relative;
+         top: -3px;
+         height: 121px;
+        background-image: url("../assets/img/SiatkaTS.jpg");
+        background-size: 2400px;
+        
+      
+       
+       }
+
         &--title {
+          position: absolute;
+          top: 160px;
           font-size: 2.5vw;
           margin: 0;
-          padding: 15px 15px 0 420px;
+          margin-left: 420px;
+          padding: 0 15px 0 0px;
+          font-weight: 600;
+          
+         
         }
       }
       &--bottom1 {
@@ -71,10 +78,11 @@
 
       }
       &--bottom {
+        margin-left: 2vw !important;
         background-color: #059316;
         height: 5.5vh;
-        margin: 0 auto;
-        margin-left: 400px;
+        margin-left: 250px;
+       
       }
     }
     &__link {
@@ -90,14 +98,15 @@
       }
     }
   }
- 
+
   
   .ol {
     display: flex;
     justify-content: space-around;
-    padding-top: 10px;
+    padding: 5px 0;
     margin: 0;
     list-style: none;
+    margin-left: 320px;
   }
   
   ol a {
